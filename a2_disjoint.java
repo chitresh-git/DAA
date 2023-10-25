@@ -64,7 +64,6 @@ public class a2_disjoint {
         dis.union(1, 2); // joining 1 and 2
         dis.union(3, 4); // joining 3 and 4
         
-
         if (dis.findp(0) == dis.findp(2)) // if both vertex parents are same it means they both are connected even
                                           // though they are not adjacent to each other
             System.out.println("yes 0 and 2 are connected");
