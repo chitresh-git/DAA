@@ -5,7 +5,11 @@ class stack{
     static final int size=10;
     
     int top;
-    int a[]=new int[size];
+    int a[];
+
+    void initiate(int s){
+        a=new int[s];
+    }
 
     stack(){
         top=-1;
@@ -78,6 +82,7 @@ public class j35_stack{
     public static void main(String[] args) {
         
         stack s=new stack();
+        s.initiate(10);
         s.isEmpty();
         s.isFull();
         s.push(12);
