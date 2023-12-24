@@ -7,7 +7,7 @@ class sumSubset{
         return false;
 
         if(set[curInd]<=target && sos(set, target-set[curInd], n, curInd+1)){ // adding the current index int the subset as we subtracting its value from the target 
-
+          System.out.println(set[curInd]);// print subset values 
             return true;
         }
 
@@ -16,9 +16,9 @@ class sumSubset{
 }
 public class a6_sumofSubset {
     public static void main(String[] args) {
-        int a[]={4,2,1,5,67};
+        int a[]={5,10,12,13,15,18};
         int n=a.length;
-        int target=3; // targeted value 
+        int target=30; // targeted value 
 
         sumSubset s=new sumSubset();
         boolean ans=s.sos(a, target, n, 0);

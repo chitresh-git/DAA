@@ -44,11 +44,11 @@ public class a7_jobsequence {
 
     public static void main(String[] args) {
         Job []jobs={
-            new Job(100, 2, 'a'),
-            new Job(19, 1, 'b'),
-            new Job(27, 2, 'c'),
-            new Job(25, 1, 'd'),
-            new Job(15, 3, 'e')
+            new Job(20, 2, 'a'),
+            new Job(15, 2, 'b'),
+            new Job(10, 1, 'c'),
+            new Job(5, 3, 'd'),
+            new Job(1, 3, 'e')
         };
 calProfit(jobs);
         

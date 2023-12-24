@@ -4,7 +4,6 @@ public class j6_binary{
         int mid , low, high,i=0;
         low=0;
         high=arr.length;
-        mid=(low+high)/2;
        
         while(low<high){
                     mid=(low+high)/2;

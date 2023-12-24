@@ -42,12 +42,15 @@ public class a9_floyd {
 
     public static void main(String[] args) {
         int dist[][] = {
-                { 0, 5, infinite, 10 },
-                { infinite, 0, 3, infinite },
-                { infinite, infinite, 0, 1 },
-                { infinite, infinite, infinite, 0 }
+                { 0, 3, infinite, 7},
+                { 8, 0, 2, infinite },
+                { 5, infinite, 0, 1 },
+                { 2, infinite, infinite, 0 }
 
         };
+        show(dist);
+        System.out.println("after calculating");
+        
        allShortPath(dist);
 
     }

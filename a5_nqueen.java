@@ -24,6 +24,7 @@ public class a5_nqueen {
 
             j--;
         }
+
         i = row;
         j = col;
         while (i < n && j >= 0) { // checking for lower diagonal
@@ -33,6 +34,7 @@ public class a5_nqueen {
             j--;
             i++;
         }
+        
         i = row;
         j = col;
         while (i >= 0 && j >= 0) { // checking the upper diagonal

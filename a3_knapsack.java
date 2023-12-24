@@ -64,7 +64,7 @@ class item {
 public class a3_knapsack {
     public static void main(String[] args) {
 
-        int capacity = 30; // let say the capacity of the contianer is 20
+        int capacity = 20; // let say the capacity of the contianer is 20
 
         item[] items = {
                 new item(25, 18),
