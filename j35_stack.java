@@ -2,13 +2,14 @@
 // implementing the stack using the array
 
 class stack{
-    static final int size=10;
+    static  int size;
     
     int top;
     int a[];
 
     void initiate(int s){
         a=new int[s];
+        size=s;
     }
 
     stack(){
