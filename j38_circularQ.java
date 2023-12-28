@@ -27,11 +27,12 @@ class circular {
 
     }
 
-    void enqueue(int val) {
+    void enqueue(int val) { // insert the element 
         if (isfull())
             return;
         else {
-            rear = (rear + 1) % size;
+            rear = (rear + 1) % size; // performing cicular increament on rear , it means that when rear becomes to
+                                      // the capacity to the queue , the rear will reset to the 0
             a[rear] = val;
             System.out.println(val + " element is inserted \n");
 
@@ -39,11 +40,11 @@ class circular {
 
     }
 
-    void dequeue() {
+    void dequeue() {  // remove the element 
         if (isempty())
             return;
         else {
-            front = (front + 1) % size;
+            front = (front + 1) % size; // performing cicular increament on front
             int temp = a[front];
             System.out.println(temp + " element removed \n");
 
@@ -54,7 +55,6 @@ class circular {
         if (isempty())
             return;
         else {
-            System.out.println(front+" "+rear);
             if (front < rear) {
                 for (int i = front + 1; i <= rear; i++) {
                     System.out.print(" " + a[i]);
@@ -65,7 +65,7 @@ class circular {
                 for (int i = front + 1; i < size; i++) {
                     System.out.print(" " + a[i]);
                 }
-                for (int i = rear; i <=rear; i++) {
+                for (int i = rear; i <= rear; i++) {
                     System.out.print(" " + a[i]);
                 }
                 System.out.println("\n");
