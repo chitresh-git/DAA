@@ -49,6 +49,7 @@ public class J56_cycleDetect_topo {
         int v=5;
         // int e[][]={{1},{2},{3,4},{4},{}};  // acyclic 
         int e[][]={{1},{2},{3},{4},{4}};       // cyclic 
+        
         int topo=bfs(e, v);
 
         if(v!=topo) // if length of topo sort is not equal to total number of nodes then cycle is present in graph 
