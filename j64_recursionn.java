@@ -38,6 +38,13 @@ public class j64_recursionn {
         return check(i+1, j-1, a);
     }
 
+    static int  count(int c, int n){ // count the number of zero 
+        if(n==0) return c;
+
+       c=(n%10==0)?c+1:c;
+       return count(c, n/10);
+    }
+
     public static void main(String[] args) {
         func1(4, 0);
 
@@ -58,5 +65,7 @@ public class j64_recursionn {
         char ar[]=s.toCharArray();
 
         System.out.println(check(0, ar.length-1, ar));
+
+        System.out.println(count(0, 10010010));
     }
 }
