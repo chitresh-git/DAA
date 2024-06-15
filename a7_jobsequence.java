@@ -14,7 +14,7 @@ class Job{
 
 public class a7_jobsequence {
     
-   static void calProfit(Job [] job){
+   static void calProfit(Job [] job){ 
         int n=job.length;
 
         Arrays.sort(job,(a,b)->b.profit-a.profit); // will sort the jobs object based on profits in descending order
